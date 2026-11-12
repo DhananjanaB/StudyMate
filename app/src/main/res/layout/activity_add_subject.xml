@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Screen Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Subject"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#202544"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your subject details below."
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Subject Name Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject Name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#202544"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Subject Name Input -->
+        <EditText
+            android:id="@+id/etSubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter subject name"
+            android:padding="14dp"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:backgroundTint="#6C63FF"/>
+
+        <!-- Lecturer Name Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lecturer Name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#202544"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Lecturer Name Input -->
+        <EditText
+            android:id="@+id/etLecturerName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter lecturer name"
+            android:padding="14dp"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:backgroundTint="#6C63FF"/>
+
+        <!-- Colour Tag Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Subject Colour"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#202544"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Colour Options -->
+        <LinearLayout
+            android:id="@+id/layoutColorOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:id="@+id/colorPurple"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="#8B7CFF"
+                android:layout_marginEnd="15dp"/>
+
+            <View
+                android:id="@+id/colorBlue"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="#4D96FF"
+                android:layout_marginEnd="15dp"/>
+
+            <View
+                android:id="@+id/colorGreen"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="#55C99A"
+                android:layout_marginEnd="15dp"/>
+
+            <View
+                android:id="@+id/colorOrange"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="15dp"
+                android:background="#FFAD60" />
+
+            <View
+                android:id="@+id/colorPink"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="#FF7E9D" />
+
+        </LinearLayout>
+
+        <!-- Save Subject Button -->
+        <Button
+            android:id="@+id/btnSaveSubject"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Save Subject"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6C63FF"
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
